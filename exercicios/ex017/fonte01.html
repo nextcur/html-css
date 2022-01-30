@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            /*
+                Medidas absolutas
+                cm, mm, in, px, pt, pc
+                
+                Medidas relativas
+                em, ex, rem, vw, vh, %
+
+                usar basicamente o em = altura do "M"
+                recomendação w3c é usar px e em.
+            */
+            font-size: 1em;
+            /*
+                16px geralmente 1em 
+                melhor sempre usar o "em" pois ele vai variar de maneira uniforme em todas as telas, a referencia de uma fonte padrao = 1em, 0.5em - metade da fonte padrao.
+            */
+
+            /* Peso da fonte 
+               lighter - magrinho
+               normal
+               bold
+               bolder
+            */
+            font-weight: normal;
+
+            /* 
+                weight, width, height
+                PESO, LARGURA, ALTURA
+            */
+        }
+
+        h1 {
+            /*
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /* Shorthand font (Consigo fazer varias coisas em uma unica linha)
+            - font-style -> font-weight -> font-size -> font-family*/
+            
+
+            font: italic bolder 3em 'Courier New', Courier, monospace;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed non fugit mollitia voluptas voluptates nobis facilis quos perferendis deleniti optio omnis at iure, animi aut magni explicabo obcaecati assumenda iusto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nulla, laboriosam libero illo iusto eius dolore, alias saepe eveniet architecto soluta maiores veritatis doloremque inventore velit consequatur quam labore doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vel iusto libero quis totam asperiores tenetur, accusamus perspiciatis voluptatem consequatur quos ducimus, recusandae ipsum reprehenderit nisi? Porro nostrum illum maxime.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus dolorem nemo, ducimus sequi autem tempora nostrum error commodi, a, earum eos ex soluta ea maiores voluptatibus voluptatem recusandae unde.</p>
+</body>
+</html>

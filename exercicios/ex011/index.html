@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navagador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flaxivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="auto" controls autoplay>
+       <source src="midia/rock.mp3" type="audio/mpeg">
+    </audio> 
+    <!-- MP3 WAV OGG -->
+
+    <H1>Inserindo videos hospedado localmente</H1>
+    <p>Este video está hospedado no meu proprio servidor</p>
+    <video width="560" poster="imagens/thumbs.png" controls>
+        <source src="videos/lemon.mp4" type="video/mp4">
+        <source src="videos/lemon.m4v" type="video/mp4">
+        <source src="videos/lemon.webm" type="video/webm">
+        <source src="videos/lemon.ogv" type="video/ogg">
+    </video>   
+
+    <h1>Consumindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XtXuoeB15tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
