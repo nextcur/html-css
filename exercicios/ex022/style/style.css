@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url("../imagens/wallpaper003.jpg");
+    background-position: center center;
+    /* posicionamento da imagen
+    left top - center top - right top
+    left center - center center - right center
+    left bottom - center bottom - right bottom
+    
+    */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* cover -> Completa a tela com a imagem fazendo os cortes laterais ou em cima e em baixo
+    contain -> coloca linhas da cor de fundo nas laterais ou em cima e em baixo deixando a imagem sempre com visibilidade total
+    */
+
+}
+
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
