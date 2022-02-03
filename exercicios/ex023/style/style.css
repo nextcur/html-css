@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
 :root {
     --color-base-header: black;
     --color-base-header-text: white;
@@ -10,6 +12,10 @@
     --color-fundo-text: white;
 
     --color-fundo-imagem: rgb(71, 71, 71);
+
+    --font-default: Verdana, Geneva, Tahoma, sans-serif; 
+    --font-header: 'Passion One', cursive;
+    --font-main: 'Sriracha', cursive;
 }
 
 * {
@@ -26,6 +32,7 @@ header {
     background-color: var(--color-base-header);
     color: var(--color-base-header-text);
     text-align: center;
+    font-family: var(--font-header);
 }
 
 header h1 {
@@ -36,6 +43,7 @@ header h1 {
 
     /* Deixa tambem em maiusculo porem com as letras um pouco menor que a primeira (mais indicado) */
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header p {
@@ -68,6 +76,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+
+    font-family: var(--font-main);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -75,9 +86,8 @@ section.normal {
     background-color: var(--color-normal-background);
 }
 
-section.fundo1 {
+section.imagem {
     background-color: var(--color-fundo-imagem);
-    background-image: url("../imagens/background001.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; 
@@ -86,25 +96,27 @@ section.fundo1 {
     text-shadow: 2px 2px 2px black;
 }
 
-section.fundo1 > p, section.fundo2 > p   {
-    background-color: rgba(0, 0, 0, 0.300);
-    width: 300px;
+section#fundo1 {
+    background-image: url("../imagens/background001.jpg");
 }
 
-section.fundo2 {
-    background-color: var(--color-fundo-imagem);
+section#fundo2 {
     background-image: url("../imagens/background002.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
 
-    color: var(--color-fundo-text);
-    text-shadow: 2px 2px 2px black;
 }
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.300);
+    /*width: 40vw; funciona tambem*/
+    display: inline-block;
+    padding: 5px;
+}
+
 
 footer {
     background-color: var(--color-base-header);
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--font-default);
 }
