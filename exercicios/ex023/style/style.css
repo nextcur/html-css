@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+:root {
+    --color-base-header: black;
+    --color-base-header-text: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    position: relative;
+
+    width: 100vh;
+    height: 150px;
+    
+    background-color: var(--color-base-header);
+    color: var(--color-base-header-text);
+}
+
+section.header-container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+
+header h1 {
+}
+
+header p {
+}
