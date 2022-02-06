@@ -11,10 +11,42 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
-        td {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(75, 75, 75);
+        }
+
+        td, th {
             border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numeros {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            /* even = Par
+                odd = impar */
+            background-color: lightgray;
+
+        }
+
+        thead, tfoot {
+            background-color: rgb(75, 75, 75);
+            color: white;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(179, 167, 167);
         }
     </style>
 </head>
@@ -24,6 +56,7 @@
     <!--
         Anatomia de tabelas grandes
         TABLE
+            CAPTION
             THEAD
                TR, TD, TH
             TBODY
@@ -33,22 +66,157 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="numeros">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numeros">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numeros">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numeros">14 985 284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numeros">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numeros">11 466 630</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numeros">9 674 793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numeros">9 240 580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numeros">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numeros">7 338 473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numeros">7 206 589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numeros">7 153 262</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numeros">4 269 995</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numeros">4 108 508</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numeros">3 567 234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numeros">3 560 903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numeros">3 365 351</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numeros">3 289 290</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numeros">3 094 325</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numeros">2 839 188</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numeros">2 338 474</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numeros">1 815 278</td>
+            </tr>
+
+            <tr>
+                <td>Tocantins</td>	
+                <td class="numeros">1 607 363</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numeros">906 876</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numeros">877 613</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numeros">652 713</td>
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numeros">213 317 639</td>
+            </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis eaque error quaerat aut magnam eius aliquid maiores vitae veniam culpa sint repellendus animi, dolorum enim, eum debitis distinctio? Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nisi libero ex eveniet sapiente, accusantium necessitatibus animi corporis temporibus adipisci perspiciatis id vel similique? Architecto saepe accusantium distinctio officia fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus minima expedita provident velit exercitationem illo modi dolorum deserunt! Ratione inventore quae enim fugiat optio, magni ullam similique totam dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat, expedita magni minima dicta doloribus assumenda sapiente quisquam laudantium? Pariatur deleniti reprehenderit repudiandae iste assumenda, illo magnam earum ullam expedita!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quo iusto dolorem eligendi et. Repudiandae alias rem corrupti culpa sunt! Repellat vero laboriosam vitae incidunt voluptatem veritatis dolor inventore porro?
+    </p>
     
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis eaque error quaerat aut magnam eius aliquid maiores vitae veniam culpa sint repellendus animi, dolorum enim, eum debitis distinctio? Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nisi libero ex eveniet sapiente, accusantium necessitatibus animi corporis temporibus adipisci perspiciatis id vel similique? Architecto saepe accusantium distinctio officia fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus minima expedita provident velit exercitationem illo modi dolorum deserunt! Ratione inventore quae enim fugiat optio, magni ullam similique totam dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat, expedita magni minima dicta doloribus assumenda sapiente quisquam laudantium? Pariatur deleniti reprehenderit repudiandae iste assumenda, illo magnam earum ullam expedita!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quo iusto dolorem eligendi et. Repudiandae alias rem corrupti culpa sunt! Repellat vero laboriosam vitae incidunt voluptatem veritatis dolor inventore porro?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis eaque error quaerat aut magnam eius aliquid maiores vitae veniam culpa sint repellendus animi, dolorum enim, eum debitis distinctio? Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nisi libero ex eveniet sapiente, accusantium necessitatibus animi corporis temporibus adipisci perspiciatis id vel similique? Architecto saepe accusantium distinctio officia fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus minima expedita provident velit exercitationem illo modi dolorum deserunt! Ratione inventore quae enim fugiat optio, magni ullam similique totam dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat, expedita magni minima dicta doloribus assumenda sapiente quisquam laudantium? Pariatur deleniti reprehenderit repudiandae iste assumenda, illo magnam earum ullam expedita!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quo iusto dolorem eligendi et. Repudiandae alias rem corrupti culpa sunt! Repellat vero laboriosam vitae incidunt voluptatem veritatis dolor inventore porro?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis eaque error quaerat aut magnam eius aliquid maiores vitae veniam culpa sint repellendus animi, dolorum enim, eum debitis distinctio? Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nisi libero ex eveniet sapiente, accusantium necessitatibus animi corporis temporibus adipisci perspiciatis id vel similique? Architecto saepe accusantium distinctio officia fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus minima expedita provident velit exercitationem illo modi dolorum deserunt! Ratione inventore quae enim fugiat optio, magni ullam similique totam dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat, expedita magni minima dicta doloribus assumenda sapiente quisquam laudantium? Pariatur deleniti reprehenderit repudiandae iste assumenda, illo magnam earum ullam expedita!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quo iusto dolorem eligendi et. Repudiandae alias rem corrupti culpa sunt! Repellat vero laboriosam vitae incidunt voluptatem veritatis dolor inventore porro?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis eaque error quaerat aut magnam eius aliquid maiores vitae veniam culpa sint repellendus animi, dolorum enim, eum debitis distinctio? Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nisi libero ex eveniet sapiente, accusantium necessitatibus animi corporis temporibus adipisci perspiciatis id vel similique? Architecto saepe accusantium distinctio officia fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus minima expedita provident velit exercitationem illo modi dolorum deserunt! Ratione inventore quae enim fugiat optio, magni ullam similique totam dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat, expedita magni minima dicta doloribus assumenda sapiente quisquam laudantium? Pariatur deleniti reprehenderit repudiandae iste assumenda, illo magnam earum ullam expedita!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quo iusto dolorem eligendi et. Repudiandae alias rem corrupti culpa sunt! Repellat vero laboriosam vitae incidunt voluptatem veritatis dolor inventore porro?
+    </p>
 </body>
 </html>
