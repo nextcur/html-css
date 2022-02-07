@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }        
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(even) {
+            /* even = Par
+                odd = impar */
+            background-color: lightgray;
+
+        }
+
+        th {
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Mesclagem de células</h1>
@@ -12,32 +45,29 @@
         <caption>Mesclagem de colunas</caption>
         <thead>
             <tr>
+                <th>X</th>
                 <th>1º Coluna</th>
                 <th>2º Coluna</th>
                 <th>3º Coluna</th>
-                <th>4º Coluna</th>
             </tr>
         </thead>
         <tbody>
             <tr> <!-- 1º Linha -->
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>X</th>
+                <td>A</td>
+                <td colspan="2">B</td>
             </tr>
             <tr> <!-- 2º Linha -->
-                <td></td>
-                <td></td>
-                <td></td>
+                <th rowspan="3">X</th>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td rowspan="2">F</td>
             </tr>
             <tr> <!-- 3º Linha -->
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>H</td>
             </tr>
             <tr> <!-- 4º Linha -->
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="2">K</td>
             </tr>
         </tbody>
         <tfoot>
